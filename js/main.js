@@ -102,3 +102,20 @@
     
 })(jQuery);
 
+
+
+// Update cart badge
+let addBtn = document.querySelector('.add-cart');
+
+let badgeCart = document.querySelector('.badge-c');
+let badgeFav  = document.querySelector('.badge-f');
+
+badgeCart.textContent = 1;
+badgeFav.textContent = 4;
+
+addBtn.addEventListener('click', ()=>{
+    badgeCart.textContent ++;
+});
+
+
+
